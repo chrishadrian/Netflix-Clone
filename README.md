@@ -1,7 +1,7 @@
 # netflix-clone
- Introduction to Web Development by Zaio
+ introduction to Web Development by Zaio
 
 
 # VScode Shortcuts
- Turn a line into a comment -> CTRL + /
- Creating div with class -> .class
+ turn a line into a comment -> CTRL + /
+ creating div with class -> .class

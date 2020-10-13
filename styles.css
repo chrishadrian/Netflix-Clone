@@ -1,25 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap);
+
 * {
-    font-size: 16px; /* Universal Selector */
-}
+    font-family: 'Open Sans', san-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
 
-body {
-    background-color: pink;
-    color: white;
+.banner-wrap {
+    background: url(./assets/bgimage.jpg) 0 0 no-repeat;
+    background-size: cover;
     
+    height: 80vh;background-position: center;
 }
 
-#header-title {
-    color: green; /* id */ 
+.nav-bar {
+    display: flex;
+    padding-top: 20px;
+    margin: 0 56px;
+    justify-content: space-between;
 }
 
-.large-font {
-    font-size: 88px; /* class */
+.nav-bar .logo img {
+    height: 35px;
 }
 
-.blue-font{
-    color: blue;
+.nav-bar .btn {
+    color: white;
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-h1, h3 {
-    color: red;
+.banner-container {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 45px;
+    text-align: center;
+}
+
+.banner-container h1 {
+    font-size: 3.125rem;
+}
+
+.banner-container h2 {
+    font-size: 1.625rem;
+    margin: 1rem auto;
+}
+
+.banner-container h3 {
+    padding-bottom: 20px;
+    font-size: 1.2rem
 }

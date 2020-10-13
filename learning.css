@@ -1,5 +1,5 @@
-{
-    font-size: 20px;  ->  Universal Selector 
+* {
+    font-size: 20px; /* universal selector (root) */
 }
 
 body {
