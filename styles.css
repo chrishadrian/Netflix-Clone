@@ -1,5 +1,25 @@
+* {
+    font-size: 16px; /* Universal Selector */
+}
+
 body {
-    background-color: black;
+    background-color: pink;
     color: white;
     
+}
+
+#header-title {
+    color: green; /* id */ 
+}
+
+.large-font {
+    font-size: 88px; /* class */
+}
+
+.blue-font{
+    color: blue;
+}
+
+h1, h3 {
+    color: red;
 }
