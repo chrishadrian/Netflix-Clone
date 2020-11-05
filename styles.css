@@ -12,15 +12,28 @@
 .banner-wrap {
     background: url(./assets/bgimage.jpg) 0 0 no-repeat;
     background-size: cover;
-    
-    height: 80vh;background-position: center;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
 }
 
+.banner-wrap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: '';
+    z-index: -1;
+}
 .nav-bar {
     display: flex;
     padding-top: 20px;
     margin: 0 56px;
     justify-content: space-between;
+    height: 55px;
 }
 
 .nav-bar .logo img {
@@ -44,18 +57,101 @@
     justify-content: center;
     padding: 70px 45px;
     text-align: center;
+    height: calc(100% - 55px);
 }
 
-.banner-container h1 {
+/* .banner-container h1 {
+    font-size: 3.125rem; you can set the h1 in specific class.
+} */
+
+h1 {
     font-size: 3.125rem;
+    line-height: 1.1;
+    margin: 16px 70px;
+    font-weight: 600;
 }
 
-.banner-container h2 {
-    font-size: 1.625rem;
-    margin: 1rem auto;
+h2 {
+    font-size: 1.625rem;    
+    line-height: 1.1;
+    margin: 16px 75px;
+    font-weight: 400;
 }
 
-.banner-container h3 {
+h3 {
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
     padding-bottom: 20px;
-    font-size: 1.2rem
+}
+
+.get-started {
+    padding-top: 0.85rem;
+}
+
+.get-started form {
+    height: 60px;
+    display: flex;
+}
+
+.get-started input {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    border: none;
+    width: 450px;
+}
+
+.get-started .btn {
+    background-color: #e50914;
+    color: white;
+    width: 248px;
+    padding: 0px 26px;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 1.625rem;
+}
+
+.info-container {
+    display: flex; /* placing divs in different rows */
+    background: black;
+    color: white;
+    align-items: center;
+    position: relative;
+    padding: 45px 70px;
+    border-top: solid #222 10px;
+}
+
+
+.tv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv {
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    top: 20%;
+}
+
+.footer {
+    border-top: solid #222222 10px;
+    color: #222222;
+    background: black;
+    display: flex;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
