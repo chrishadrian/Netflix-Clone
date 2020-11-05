@@ -1,2 +1,3 @@
 # netflix-clone
- introduction to Web Development by Zaio
+ Introduction to Web Development by Zaio
+ https://netflixclone-chrishadrian.netlify.app/
