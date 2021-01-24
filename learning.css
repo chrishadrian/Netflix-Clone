@@ -1,0 +1,25 @@
+* {
+    font-size: 20px; /* universal selector (root) */
+}
+
+body {
+    background-color: white;
+    color: black;
+    
+}
+
+#header-title {
+    color: white; /* id */ 
+}
+
+.large-font {
+    font-size: 88px; /* class */
+}
+
+.blue-font{
+    color: blue;
+}
+
+h1, h3 {
+    color: red;
+}
